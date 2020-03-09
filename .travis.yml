@@ -10,5 +10,5 @@ env:
    - FAIL=1
    - FAIL=0
 script:
- - while sleep 5; do echo .; done  # Cheap wait command
+ - bash -c "while sleep 5; do echo .; done" &  # Cheap background wait command
  - if [[ $FAIL == 1 ]] ; then false ; else true ; fi  # Cheap test command
