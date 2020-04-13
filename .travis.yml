@@ -10,4 +10,4 @@ env:
    - FAIL=1
    - FAIL=0
 script:
- - set -o errexit; bash ./cheap_tester.sh
+ - set -o errexit; if [[ $FAIL == 1 ]] ; then false ; else true ; fi
