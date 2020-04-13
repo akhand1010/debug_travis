@@ -10,4 +10,4 @@ env:
    - FAIL=1
    - FAIL=0
 script:
- - set -o errexit; source ./cheap_tester.sh
+ - source ./cheap_tester.sh
